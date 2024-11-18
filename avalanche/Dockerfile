@@ -55,7 +55,7 @@ ARG AVALANCHE_HOME
 
 ENV DEBIAN_FRONTEND=noninteractive \
     USERNAME=appuser \
-    APP_PATH=/root
+    APP_PATH=/data
 
 RUN apt update && \
     apt -y dist-upgrade && \
