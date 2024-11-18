@@ -11,10 +11,10 @@ services:
         "--public-ip=<ENTER YOUR EXTERNAL IP>"
       ]
     volumes:
-      - "${PWD}/avalanchego:/root/.avalanchego"
+      - "${PWD}/avalanchego:/data/.avalanchego"
     ports:
       # Health and Monitoring TCP (Default: 9100)
-      - 127.0.0.1:9100:9100
+      - "127.0.0.1:9100:9100"
       # Localhost-only binding for API access
       # HTTP API Json TCP (Default: 9650)
       - "127.0.0.1:9650:9650"
